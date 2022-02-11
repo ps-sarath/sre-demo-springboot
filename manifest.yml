@@ -1,0 +1,11 @@
+---
+applications:
+  - name: sre-demo
+    memory: 1G
+    random-route: true
+    buildpacks:
+      - https://github.com/cloudfoundry/java-buildpack/releases/download/v4.42/java-buildpack-v4.42.zip
+    env:
+      JBP_CONFIG_SPRING_AUTO_RECONFIGURATION: '{enabled: false}'
+      SPRING_PROFILES_ACTIVE: http2,cloud
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 17.+ } }'
