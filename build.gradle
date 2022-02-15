@@ -24,11 +24,15 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    implementation "io.pivotal.cfenv:java-cfenv-boot:2.2.2.RELEASE"
+    implementation 'io.pivotal.cfenv:java-cfenv-boot:2.4.0'
+    implementation "org.springdoc:springdoc-openapi-ui:1.6.6"
+    implementation "org.springdoc:springdoc-openapi-data-rest:1.6.6"
     runtimeOnly 'com.h2database:h2'
     runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation "org.springframework.boot:spring-boot-test"
+    testImplementation 'com.github.javafaker:javafaker:1.0.2'
 }
 
 tasks.named('test') {

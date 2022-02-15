@@ -1,7 +1,9 @@
 spring:
   jpa:
     generate-ddl: true
-
+springdoc:
+  swagger-ui:
+    path: /api-doc/
 management:
   endpoints:
     web:
