@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+
+<configuration scan="true">
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <logger name="com.philips.samples.cfdemo" level="DEBUG"/>
+    <logger name="org.springframework.data.jpa" level = "DEBUG" />
+</configuration>
